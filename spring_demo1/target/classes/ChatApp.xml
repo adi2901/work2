@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"     
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd   
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-2.5.xsd">  
+   <context:annotation-config/>
+
+   <bean id ="sports" class ="com.spring_demo.ChatRoom">
+   <property name="users">
+   <set>
+   <value>"Nikhil"</value>
+   <value>"Gourav"</value>
+   <value>"Surendra"</value>
+   <value>"Nikhil"</value>
+   </set>
+   </property>
+    <property name="messages">
+   <list>
+   <value>"Hii"</value>
+   <value>"hello"</value>
+   </list>
+   </property>
+   </bean>
+   <bean id ="Electronic" class ="com.spring_demo.ChatRoom">
+   <property name="users">
+   <set>
+   <value>"Snigdha"</value>
+   <value>"Gourav"</value>
+   <value>"Susree"</value>
+   <value>"Gourav"</value>
+   </set>
+   </property>
+    <property name="messages">
+   <list>
+   <value>"byee"</value>
+   <value>"Good Night"</value>
+   </list>
+   </property>
+   </bean>
+   </beans>

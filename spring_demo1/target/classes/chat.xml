@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<!-- Enable Annotation based configuration -->
+	<context:annotation-config />
+	
+	<bean id="chat" class="com.spring_demo.ChatRoom.Chat" init-method="init" destroy-method="destroy" scope="singleton">
+	<property name="name" value= "Ravi"></property>
+	<property name= "number" value= "900"></property>
+	</bean>
+	<bean id="chat2" class="com.spring_demo.ChatRoom.Chat_2" init-method="init" destroy-method="destroy" scope="singleton">
+	<property name="name" value= "Shayam"></property>
+	<property name= "number" value= "100"></property>
+	</bean>
+	</beans>
